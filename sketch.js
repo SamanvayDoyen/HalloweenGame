@@ -33,7 +33,7 @@ var score = 0
 function draw() {
   background(Back);
   stroke("pink")
-  if (frameCount%30 == 0){
+  if (frameCount%30 == 0 && score < 50){
     generateOb()
   }
   for (d = 0;d < ObGroup.length;d +=1 ){
